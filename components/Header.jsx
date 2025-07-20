@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { useTranslations } from 'next-intl';
-import NAV from "./NAV";
+import NAV from "./Nav";
 import MobileNav from "./ui/MobileNav";
 import LanguageSwitcher from "./LanguageSwitcher";
 
