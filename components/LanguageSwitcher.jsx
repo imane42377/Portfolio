@@ -2,6 +2,7 @@
 
 import { useRouter, usePathname } from 'next/navigation';
 import { useLocale } from 'next-intl';
+import Cookies from 'js-cookie';
 
 export default function LanguageSwitcher() {
   const router = useRouter();
@@ -10,8 +11,11 @@ export default function LanguageSwitcher() {
 
   const onSelectChange = (e) => {
     const newLocale = e.target.value;
-    const segments = pathname.split('/');
 
+    // Set cookie so the language persists
+    Cookies.set('NEXT_LOCALE', newLocale);
+
+    const segments = pathname.split('/');
     if (segments[1] === 'en' || segments[1] === 'fr') {
       segments[1] = newLocale;
     } else {
