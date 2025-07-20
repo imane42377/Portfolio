@@ -1,21 +1,12 @@
-import { NextResponse } from 'next/server';
-import { matchLocale } from 'next-intl/server';
+// middleware.js
 import createMiddleware from 'next-intl/middleware';
 
-const locales = ['en', 'fr'];
-const defaultLocale = 'en';
-
-const intlMiddleware = createMiddleware({
-  locales,
-  defaultLocale,
+export default createMiddleware({
+  locales: ['en', 'fr'],
+  defaultLocale: 'en',
   localeDetection: true
 });
 
-export function middleware(request) {
-  return intlMiddleware(request);
-}
-
 export const config = {
-  // Apply middleware only to these paths
-  matcher: ['/', '/(en|fr)/:path*']
+  matcher: ['/', '/((?!_next|favicon.ico|assets|images|api).*)']
 };
