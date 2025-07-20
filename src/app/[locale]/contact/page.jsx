@@ -23,7 +23,9 @@ const Contact = () => {
 
   const formattedMessage = `Nouveau message de contact\n------------------------\nNom : ${name}\nMessage :\n${message}\n------------------------`;
 
-  const whatsappUrl = `https://wa.me/212670952218?text=${encodeURIComponent(formattedMessage)}`;
+  const whatsappUrl = `https://wa.me/212670952218?text=${encodeURIComponent(
+    formattedMessage
+  )}`;
   const emailUrl = `mailto:imanemeliane18@gmail.com?subject=${encodeURIComponent(
     t("emailSubject")
   )}&body=${encodeURIComponent(formattedMessage)}`;
@@ -64,13 +66,17 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                   />
 
-                  <div className="flex gap-4 mt-6">
+                  <div className="flex gap-4 mt-6 flex-wrap">
                     {/* WhatsApp */}
                     <Button
                       asChild
-                      className="bg-[#25D366] hover:bg-[#1DA851] text-black font-bold px-6 py-3 rounded-lg transition-all duration-300"
+                      className="bg-[#25D366] hover:bg-[#1DA851] text-black font-bold px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base transition-all duration-300 flex-1"
                     >
-                      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={whatsappUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {t("sendWhatsapp")}
                       </a>
                     </Button>
@@ -78,9 +84,13 @@ const Contact = () => {
                     {/* Email */}
                     <Button
                       asChild
-                      className="bg-[#1E1E1E] hover:bg-[#2C2C2C] text-white font-bold px-6 py-3 rounded-lg transition-all duration-300"
+                      className="bg-[#1E1E1E] hover:bg-[#2C2C2C] text-white font-bold px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base transition-all duration-300 flex-1"
                     >
-                      <a href={emailUrl} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={emailUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {t("sendEmail")}
                       </a>
                     </Button>
@@ -105,14 +115,14 @@ const Contact = () => {
         </div>
       </motion.section>
 
-             {/* Footer */}
+      {/* Footer */}
       <footer className="bg-primary text-white py-6 text-center">
         {/* Combo only shown on mobile */}
         <div className="mb-4 xl:hidden">
           <LanguageSwitcher />
         </div>
         <p className="text-sm md:text-base font-bold">
-           {t('createdBy')} <span className="text-white">Imane MELIANE</span>
+          {t("createdBy")} <span className="text-white">Imane MELIANE</span>
         </p>
       </footer>
     </>
