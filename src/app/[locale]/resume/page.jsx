@@ -39,41 +39,42 @@ const Resume = () => {
 
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { delay: 0.2, duration: 0.6, ease: "easeIn" } }}
-        className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
-      >
-        <div className="container mx-auto">
-          <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
-            <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-              <TabsTrigger value="experience">{experience.title}</TabsTrigger>
-              <TabsTrigger value="education">{education.title}</TabsTrigger>
-              <TabsTrigger value="skills">{skills.title}</TabsTrigger>
-              <TabsTrigger value="about">{about.title}</TabsTrigger>
-            </TabsList>
+        <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { delay: 0.2, duration: 0.6, ease: "easeIn" } }}
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+    >
+      <div className="container mx-auto">
+        <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
+          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+            <TabsTrigger value="experience">{experience.title}</TabsTrigger>
+            <TabsTrigger value="education">{education.title}</TabsTrigger>
+            <TabsTrigger value="skills">{skills.title}</TabsTrigger>
+            <TabsTrigger value="about">{about.title}</TabsTrigger>
+          </TabsList>
 
-            <div className="min-h-[70vh] w-full">
-              {/* Experience */}
-              <TabsContent value="experience">
-                <Section
-                  title={experience.title}
-                  description={experience.Description}
-                  items={experience.items}
-                  type="experience"
-                />
-              </TabsContent>
+          <div className="min-h-[70vh] w-full">
+            {/* Experience */}
+            <TabsContent value="experience">
+              <Section
+                title={experience.title}
+                description={experience.Description}
+                items={experience.items}
+                type="experience"
+              />
+            </TabsContent>
 
-              {/* Education */}
+            {/* Education */}
             <TabsContent value="education">
-  <Section
-    title={education.title}
-    description={education.Description}
-    fillier={education.fillier}
-    items={education.items}
-    type="education"
-  />
-</TabsContent>
+              <Section
+                title={education.title}
+                description={education.Description}
+                fillier={education.fillier}
+                items={education.items}
+                type="education"
+              />
+            </TabsContent>
+
 
               {/* Skills */}
               <TabsContent value="skills">
@@ -144,10 +145,10 @@ const Section = ({ title, description, fillier, items, type }) => (
             className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
           >
             <span className="text-accent">{item.duration}</span>
-            <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+            <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left mt-2">
               {type === "experience" ? item.position : item.institution}
             </h3>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 mt-4">
               <span className="w-[6px] h-[6px] rounded-full bg-accent" />
               <p className="text-white/60">
                 {type === "experience" ? item.company : item.degree}

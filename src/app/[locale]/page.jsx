@@ -40,8 +40,8 @@ const Home = () => {
                 {/* Button and Socials */}
                 <div className="flex flex-col xl:flex-row items-center gap-8">
                   <a
- 
-                    href="https://your-site-name.vercel.app/meliane-imane-cv.pdf"
+
+                    href="/meliane-imane-cv.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

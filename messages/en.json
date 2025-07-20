@@ -25,7 +25,7 @@
     {
       "duration": "2023-2024",
       "degree": "at BTS Centre, Settat, Morocco",
-      "institution": "First-year Computer Science (DSI) student"
+      "institution": "Firstyear Computer Science (DSI) student"
       
     },
     {
@@ -129,7 +129,7 @@
         "technologies": ["#VB.net", "#SQL Server"],
         "category": "Ouled Mrah Municipality",
         "image": "/assets/Capture d'écran 2025-07-12 162846.png",
-        "pdf": "/Mon Rapport- Meliane.pdf",
+        "pdf": "/Mon-Rapport-Meliane.pdf",
         "liveDemo": "",
         "githublink": "",
         "gradient": "from-emerald-500 to-teal-500",
