@@ -1,0 +1,181 @@
+{
+  "Nav": {
+    "home": "Accueil",
+    "resume": "Parcours",
+    "work": "Travaux",
+    "contact": "Contact",
+    "hireMe": "Engagez-moi"
+  },
+  "HomePage": {
+    "softwareDeveloper": "Développeuse de Software",
+    "helloIm": "Salut, je suis",
+    "name": "Imane MELIANE",
+    "description": "Une diplômée passionnée et dédiée du BTS fillier Développement des Systèmes d’Information (DSI) du Centre BTS, motivée par le développement de Software et la résolution de problèmes. J'aime créer des solutions intelligentes et conviviales et cherche constamment à progresser à travers des projets significatifs, seul ou en équipe.",
+    "downloadCV": "Télécharger le CV",
+    "createdBy": "créé par"
+  },
+  "ContactPage": {
+    "title": "Travaillons ensemble",
+    "description": "Je suis ouverte à la collaboration, aux retours ou aux opportunités professionnelles. N'hésitez pas à me contacter.",
+    "placeholderName": "Nom complet",
+    "placeholderMessage": "Tapez votre message ici.",
+    "sendWhatsapp": "Envoyer via WhatsApp",
+    "sendEmail": "Envoyer par Email",
+    "emailSubject": "Nouveau message de contact",
+    "createdBy": "© 2025 — créé par "
+  
+},
+  "Resume": {
+  "experience": {
+    "title": "Mes expériences",
+    "Description": "Voici quelques-uns des postes et stages clés que j'ai occupés, illustrant mon parcours et ma progression dans le développement de Software.",
+    "items": [
+      {
+        "duration": "Juin 2024",
+        "position": "Développeuse Full Stack",
+        "company": "Commune d’Ouled Mrah"
+      },
+      {
+        "duration": "Juillet 2025",
+        "position": "Développeuse Full Stack",
+        "company": "Société NOVA MAROC"
+      }
+    ]
+  },
+  "education": {
+    "title": "Ma formation",
+    "Description": "Voici les principales étapes de mon parcours éducatif en informatique et développement de Software.",
+    "fillier" :"DSI : Développement des Systèmes d’Information",
+    "items": [
+      {
+        "duration": "2023-2024",
+        "degree": "au Centre BTS, Settat, Maroc",
+        "institution": "Étudiante 1ère année en Fillier (DSI)"
+      },
+      {
+        "duration": "2024-2025",
+        "degree": "au Centre BTS, Settat, Maroc",
+        "institution": "Étudiante 2ème année en Fillier DSI"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Mes compétences",
+    "description": "Mon ensemble de compétences repose sur une solide maîtrise des technologies et langages de programmation suivants :",
+    "items": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Next.js",
+      "Figma",
+      "PHP",
+      "Java",
+      "C",
+      "Python",
+      "Tkinter",
+      "Flask",
+      "MySQL Workbench",
+      "SQL Server",
+      "Tailwind"
+    ]
+  },
+  "about": {
+    "title": "À propos de moi",
+    "Description": "Voici quelques informations essentielles à mon sujet :",
+    "info": [
+      {
+        "fieldName": "Nom",
+        "fielddValue": "Imane MELTANE"
+      },
+      {
+        "fieldName": "Télé",
+        "fielddValue": "+212 6 70 95 22 18"
+      },
+      {
+        "fieldName": "Expérience",
+        "fielddValue": "2 ans"
+      },
+      {
+        "fieldName": "Email",
+        "fielddValue": "imanemeltane18@gmail.com"
+      },
+      {
+        "fieldName": "Langues",
+        "fielddValue": "Arabe, Anglais, Français"
+      }
+    ]
+  },
+  "createdBy": "© 2025 — créé par"
+},
+ "work": {
+    "pageTitle": "Projets",
+    "pageDescription": "Présentation de mon expertise technique sur diverses technologies et plateformes",
+    "loading": "Chargement des projets...",
+    "seeReport": "Voir le rapport",
+    "code": "Code",
+    "liveDemo": "Démo en ligne",
+    "footer": "© 2025 — créé par {name}",
+    "projects": [
+      {
+        "title": "Gestion des autorisations de construire",
+        "description": "Lors de mon stage à la commune d'Ouled Mrah, j'ai développé une application web pour numériser les autorisations de construire et automatiser le calcul des taxes. Cela a remplacé les processus papier, réduit les délais et erreurs tout en améliorant la transparence.",
+        "technologies": ["#VB.net", "#SQL Server"],
+        "category": "Commune d'Ouled Mrah",
+         "image": "/assets/Capture d'écran 2025-07-12 162846.png",
+        "pdf": "/Mon Rapport- Meliane.pdf",
+        "liveDemo": "",
+        "githublink": "",
+        "gradient": "from-emerald-500 to-teal-500",
+        "bgColor": "bg-gradient-to-br from-emerald-900/20 to-teal-900/20"
+      },
+      {
+        "title": "Commandes & Livraison",
+        "description": "Chez Nova Maroc, j'ai développé une application de suivi des commandes et livraisons qui a numérisé les processus manuels, réduit les erreurs et accéléré les opérations de 40%. Le système proposait des mises à jour en temps réel et des rapports automatisés. J'ai formé le personnel et collaboré avec les équipes pour assurer une adoption réussie, acquérant une expérience pratique dans l'optimisation logistique via la technologie.",
+        "technologies": ["#Python Tkinter", "#MySQL Workbench"],
+        "category": "Entreprise NOVA MAROC",
+        "image": "/assets/Capture d'écran 2025-06-15 122052.png",
+        "pdf": "/Rapport_stage_MELIANE.pdf",
+        "liveDemo": "",
+        "githublink": "https://github.com/imane42377/Commandes-Livraison",
+        "gradient": "from-emerald-500 to-teal-500",
+        "bgColor": "bg-gradient-to-br from-emerald-900/20 to-teal-900/20"
+      },
+      {
+        "title": "Système de gestion de bibliothèque",
+        "description": "Avec 2 camarades, nous avons développé 'Library' - un système de gestion pour cataloguer les livres, suivre les prêts et gérer les membres. Nous avons livré un prototype fonctionnel en 3 semaines en utilisant diverses technologies, renforçant nos compétences techniques et collaboratives.",
+        "technologies": ["#HTML", "#Bootstrap CSS", "#JavaScript jQuery", "#PHP", "#MySQL"],
+        "category": "Mini-projet",
+        "image": "/assets/Capture d'écran 2025-07-12 181622.png",
+        "pdf": "/Rapport_gb.pdf",
+        "liveDemo": "",
+        "githublink": "https://github.com/imane42377/Library",
+        "gradient": "from-emerald-500 to-teal-500",
+        "bgColor": "bg-gradient-to-br from-emerald-900/20 to-teal-900/20"
+      },
+      {
+        "title": "CliqRDV",
+        "description": "Pour mon projet de fin d'étude, j'ai co-développé une application web de santé pour la prise de rendez-vous en ligne avec un camarade. Notre solution comprenait la gestion des plannings des médecins et l'inscription des patients.",
+        "technologies": ["#HTML", "#Bootstrap CSS", "#JavaScript", "#PHP", "#MySQL"],
+        "category": "Projet de fin d'étude (PFE)",
+        "image": "/assets/Capture d'écran 2025-07-12 184923.png",
+        "pdf": "/PFE_Rapport.pdf",
+        "liveDemo": "https://imane.rf.gd/a",
+        "githublink": "https://github.com/imane42377/PFE_-CliqRDV-",
+        "gradient": "from-emerald-500 to-teal-500",
+        "bgColor": "bg-gradient-to-br from-emerald-900/20 to-teal-900/20"
+      },
+      {
+        "title": "MY_Calculator",
+        "description": "Une calculatrice simple avec des fonctions basiques que j'ai créée.",
+        "technologies": ["#HTML", "#CSS", "#JavaScript"],
+        "category": "Mini-projet",
+        "image": "/assets/Capture d'écran 2025-07-12 191901.png",
+        "pdf": "",
+        "liveDemo": "https://imane42377.github.io/My_Calculator/",
+        "githublink": "https://github.com/imane42377/My_Calculator",
+        "gradient": "from-emerald-500 to-teal-500",
+        "bgColor": "bg-gradient-to-br from-emerald-900/20 to-teal-900/20"
+      }
+    ]
+  }
+}
