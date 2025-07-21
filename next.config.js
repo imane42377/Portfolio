@@ -24,6 +24,10 @@ module.exports = withNextIntl({
       {
         source: '/:locale(en|fr)/PFE_Rapport.pdf',
         destination: '/PFE_Rapport.pdf',
+      },
+      {
+        source: '/:locale(en|fr)/favicon.png',
+        destination: '/favicon.png',
       }
     ];
   }
