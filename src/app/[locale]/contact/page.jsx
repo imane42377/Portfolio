@@ -70,7 +70,7 @@ const Contact = () => {
                     {/* WhatsApp */}
                     <Button
                       asChild
-                      className="bg-[#25D366] hover:bg-[#1DA851] text-black font-bold px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base transition-all duration-300 flex-1"
+                      className="bg-[#e32d4c] hover:bge32d4c] text-black font-bold px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base transition-all duration-300 flex-1"
                     >
                       <a
                         href={whatsappUrl}

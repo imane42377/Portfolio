@@ -73,7 +73,7 @@ const Work = () => {
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
             >
-              <div className={`absolute inset-0 bg-gradient-to-r ${project.gradient} rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm`} />
+              <div className={`absolute inset-0 bg-gradient-to-br  from-[#e32d4c] to-[#e32d4c] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm`} />
               <div className="relative bg-gray-900/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-800 group-hover:border-transparent transition-all duration-500 h-full">
                 <div className="w-full h-48 bg-gray-800 rounded-xl mb-6 flex items-center justify-center overflow-hidden">
                   {project.image ? (
@@ -83,7 +83,7 @@ const Work = () => {
                       className="w-full h-full object-cover"
                     />
                   ) : (
-                    <div className={`w-full h-full bg-gradient-to-br ${project.gradient} opacity-20 flex items-center justify-center`}>
+                    <div className={`w-full h-full bg-gradient-to-br  from-[#e32d4c] to-[#e32d4c] opacity-20 flex items-center justify-center`}>
                       {project.icon}
                     </div>
                   )}
@@ -109,7 +109,7 @@ const Work = () => {
                   ))}
                 </div>
                 {project.pdf && (
-                  <div className={`w-full py-3 px-6 bg-gradient-to-r ${project.gradient} text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105`}>
+                  <div className={`w-full py-3 px-6 bg-gradient-to-r from-[#e32d4c] to-[#e32d4c] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105`}>
                     <a
                       href={project.pdf}
                       target="_blank"
