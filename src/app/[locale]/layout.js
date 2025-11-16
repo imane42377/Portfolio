@@ -32,7 +32,7 @@ export default async function LocaleLayout({ children, params }) {
   return (
     <html lang={locale}>
     <head>
-    <link rel="icon" href="/favicon.png" sizes="any" />
+    <link rel="icon" href="/faviconee.png" sizes="any" />
   </head>
       <body className={`${jetbrainsMono.variable}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
