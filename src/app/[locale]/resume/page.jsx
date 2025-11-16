@@ -137,7 +137,7 @@ const Section = ({ title, description, fillier, items, type }) => (
     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{description}</p>
  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{fillier}</p>
 
-   <div className="max-h-[480px] overflow-y-auto pr-2 scrollbar">
+   <div className="max-h-[800px] overflow-y-auto pr-2 scrollbar">
       <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
         {items.map((item, index) => (
           <li
