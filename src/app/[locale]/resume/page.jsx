@@ -3,13 +3,14 @@
 import {
   FaHtml5, FaCss3, FaJs, FaFigma, FaPhp, FaJava, FaPython,
 } from "react-icons/fa";
-import { SiNextdotjs, SiMysql, SiC, SiFlask, SiTailwindcss } from "react-icons/si";
+import { SiNextdotjs, SiMysql, SiC, SiFlask, SiTailwindcss, SiReact , SiNodedotjs} from "react-icons/si";
 import { MdStorage } from "react-icons/md";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 import { useTranslations, useMessages } from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import React from "react";
 
 const techIcons = {
   HTML: <FaHtml5 className="w-16 h-16 text-orange-500" />,
@@ -26,6 +27,8 @@ const techIcons = {
   "MySQL Workbench": <SiMysql className="w-16 h-16 text-blue-400" />,
   "SQL Server": <MdStorage className="w-16 h-16 text-red-600" />,
   Tailwind: <SiTailwindcss className="w-16 h-16 text-sky-400" />,
+  React : <SiReact className="w-16 h-16 text-sky-400"/>,
+  nodeJs: <SiNodedotjs className="w-16 h-16 text-green-400"  />
 };
 
 const Resume = () => {
