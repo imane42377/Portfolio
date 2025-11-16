@@ -130,14 +130,13 @@ const Resume = () => {
     </>
   );
 };
-
 const Section = ({ title, description, fillier, items, type }) => (
   <div className="flex flex-col gap-[30px] text-center xl:text-left">
     <h3 className="text-4xl font-bold">{title}</h3>
     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{description}</p>
- <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{fillier}</p>
+    {fillier && <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{fillier}</p>}
 
-   <div className="max-h-[800px] overflow-y-auto pr-2 scrollbar">
+    <div className="max-h-[800px] overflow-y-auto pr-2 scrollbar">
       <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
         {items.map((item, index) => (
           <li
@@ -148,21 +147,28 @@ const Section = ({ title, description, fillier, items, type }) => (
             <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left mt-2">
               {type === "experience" ? item.position : item.institution}
             </h3>
-            <div className="flex items-center gap-3 mt-4">
-              <span className="w-[6px] h-[6px] rounded-full bg-accent" />
+            <div className="flex flex-col items-center lg:items-start gap-2 mt-4">
               <p className="text-white/60">
-                {console.log("Education items:", education.items)}
-
                 {type === "experience" ? item.company : item.degree}
-
               </p>
+
+              {/* Render course links if they exist */}
+              {item.link && (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-accent hover:underline"
+                >
+                  Voir le cours
+                </a>
+              )}
             </div>
           </li>
         ))}
       </ul>
     </div>
   </div>
-  console.log(education.items);
 );
 
 export default Resume;
