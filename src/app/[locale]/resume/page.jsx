@@ -151,6 +151,8 @@ const Section = ({ title, description, fillier, items, type }) => (
             <div className="flex items-center gap-3 mt-4">
               <span className="w-[6px] h-[6px] rounded-full bg-accent" />
               <p className="text-white/60">
+                {console.log("Education items:", education.items)}
+
                 {type === "experience" ? item.company : item.degree}
 
               </p>
