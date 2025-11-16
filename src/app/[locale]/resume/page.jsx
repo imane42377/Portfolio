@@ -160,6 +160,7 @@ const Section = ({ title, description, fillier, items, type }) => (
       </ul>
     </div>
   </div>
+  console.log(education.items);
 );
 
 export default Resume;
