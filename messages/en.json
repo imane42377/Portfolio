@@ -32,7 +32,19 @@
       "duration": "2024-2025",
       "degree": "at BTS Centre, Settat, Morocco",
       "institution": "Second-year Computer Science (DSI) student"
-    }
+    },
+     {
+      "duration": "September 28, 2025",
+      "degree": "at Coursera site web ",
+       "link":"https://coursera.org/share/b0bece9b26ca159a97362f7a18b6d8c9",
+      "institution": " Course Certificate React Basics"
+    },
+    {
+      "duration": "September 28, 2025",
+      "degree": "at Coursera site web ",
+      "link":"https://coursera.org/share/d1411a2891b040355a030cbcce374c41",
+      "institution": " Course Certificate Advanced React"
+    },
   ]
 }
 ,
