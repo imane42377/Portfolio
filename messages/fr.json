@@ -57,6 +57,18 @@
         "duration": "2024-2025",
         "degree": "au Centre BTS, Settat, Maroc",
         "institution": "Étudiante 2ème année en Fillier DSI"
+      },
+      {
+        "duration": "28 septembre 2025",
+        "degree": "sur le site web Coursera",
+        "link": "https://coursera.org/share/b0bece9b26ca159a97362f7a18b6d8c9",
+        "institution": "Certificat de cours : React Basics"
+      },
+      {
+        "duration": "16 novembre 2025",
+        "degree": "sur le site web Coursera",
+        "link": "https://coursera.org/share/d1411a2891b040355a030cbcce374c41",
+        "institution": "Certificat de cours : Advanced React"
       }
     ]
   },
