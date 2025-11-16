@@ -31,6 +31,9 @@ export default async function LocaleLayout({ children, params }) {
   const messages = (await import(`../../../messages/${locale}.json`)).default;
   return (
     <html lang={locale}>
+    <head>
+    <link rel="icon" href="/favicon.png" sizes="any" />
+  </head>
       <body className={`${jetbrainsMono.variable}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
