@@ -130,7 +130,6 @@ const Resume = () => {
     </>
   );
 };
-
 const Section = ({ title, description, fillier, items, type }) => (
   <div className="flex flex-col gap-[30px] text-center xl:text-left">
     <h3 className="text-4xl font-bold">{title}</h3>
@@ -171,6 +170,5 @@ const Section = ({ title, description, fillier, items, type }) => (
     </div>
   </div>
 );
-
 
 export default Resume;
