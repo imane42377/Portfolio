@@ -73,7 +73,7 @@ const Work = () => {
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br  from-[#e32d4c] to-[#e32d4c] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm`} />
+              <div className={`absolute inset-0 bg-gradient-to-br  from-accent to-accent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm`} />
               <div className="relative bg-gray-900/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-800 group-hover:border-transparent transition-all duration-500 h-full">
                 <div className="w-full h-48 bg-gray-800 rounded-xl mb-6 flex items-center justify-center overflow-hidden">
                   {project.image ? (
@@ -83,12 +83,12 @@ const Work = () => {
                       className="w-full h-full object-cover"
                     />
                   ) : (
-                    <div className={`w-full h-full bg-gradient-to-br  from-[#e32d4c] to-[#e32d4c] opacity-20 flex items-center justify-center`}>
+                    <div className={`w-full h-full bg-gradient-to-br  from-accent to-accent opacity-20 flex items-center justify-center`}>
                       {project.icon}
                     </div>
                   )}
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-accent group-hover:to-pink-500 group-hover:bg-clip-text transition-all duration-300">
+                <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-accent group-hover:to-accent-hover/40 group-hover:bg-clip-text transition-all duration-300">
                   {project.title}
                 </h3>
                 <span className="inline-block px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full mb-4">
@@ -109,7 +109,7 @@ const Work = () => {
                   ))}
                 </div>
                 {project.pdf && (
-                  <div className={`w-full py-3 px-6 bg-gradient-to-r from-[#e32d4c] to-[#e32d4c] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105`}>
+                  <div className={`w-full py-3 px-6 bg-gradient-to-r from-accent to-accent-hover text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-accent-500/25 transition-all duration-300 transform hover:scale-105`}>
                     <a
                       href={project.pdf}
                       target="_blank"
